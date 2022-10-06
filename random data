@@ -31,3 +31,9 @@ VALUES
 ('Consider the Lobster', 'David', 'Foster Wallace', 2005, 92, 343);
 
 SELECT SUBSTRING(title, 1, 10) AS 'short title' FROM books;
+
+
+
+SELECT
+    SUBSTRING(REPLACE(title, 'e', '3'), 1, 10) AS 'weird string'
+FROM books;
