@@ -56,3 +56,10 @@ GROUP BY released_year;
 
 SELECT title, pages FROM books2 
 WHERE pages=(SELECT MAX(pages) FROM books2);
+
+
+SELECT 
+CONCAT (author_fname, ' ', author_lname) AS Author,
+		MAX(pages) AS 'Longest Book'
+    FROM books2
+    GROUP BY author_lname, author_fname;
