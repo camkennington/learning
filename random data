@@ -63,3 +63,7 @@ CONCAT (author_fname, ' ', author_lname) AS Author,
 		MAX(pages) AS 'Longest Book'
     FROM books2
     GROUP BY author_lname, author_fname;
+    
+    
+SELECT author_fname, author_lname, AVG(pages) FROM books2
+GROUP BY author_lname, author_fname;
