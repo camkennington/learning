@@ -49,3 +49,6 @@ FROM books2;
 DELETE FROM books2 
 WHERE book_id IN (18, 19, 20);
 
+
+SELECT CONCAT ('In ', released_year, ' ', COUNT(*), ' books(s) released') AS year FROM books2
+GROUP BY released_year;
