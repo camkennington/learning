@@ -52,3 +52,7 @@ WHERE book_id IN (18, 19, 20);
 
 SELECT CONCAT ('In ', released_year, ' ', COUNT(*), ' books(s) released') AS year FROM books2
 GROUP BY released_year;
+
+
+SELECT title, pages FROM books2 
+WHERE pages=(SELECT MAX(pages) FROM books2);
