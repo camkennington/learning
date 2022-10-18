@@ -122,3 +122,7 @@ FROM people
 WHERE 
     birthdt BETWEEN CAST('1980-01-01' AS DATETIME)
     AND CAST('2000-01-01' AS DATETIME);
+    
+    
+    SELECT title, author_lname FROM books2
+WHERE author_lname IN ('Carver', 'Lahiri', 'Smith');
