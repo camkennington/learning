@@ -301,3 +301,14 @@ FROM series
     ON series.id = reviews.series_id
     GROUP BY title
     ORDER BY avg_rating;
+    
+-------Looking for all reviews submitted by reviewers--------
+
+SELECT first_name,
+		last_name,
+        rating
+FROM reviewers 
+    JOIN reviews 
+    ON reviewers.id = reviews.reviewer_id;
+    
+   
