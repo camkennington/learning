@@ -311,4 +311,6 @@ FROM reviewers
     JOIN reviews 
     ON reviewers.id = reviews.reviewer_id;
     
+    
+----------Looking for all series with no reviews-----------
    
