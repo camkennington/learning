@@ -353,3 +353,11 @@ FROM reviewers
         ON reviewers.id = reviews.reviewer_id
         JOIN series
         ON reviews.series_id = series.id;
+	
+-----------HAVING UPDATE----------------
+SELECT 
+    title, 
+    AVG(rating),
+    COUNT(rating) AS review_count
+FROM full_reviews 
+GROUP BY title HAVING COUNT(rating) > 1;
