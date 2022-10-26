@@ -344,3 +344,12 @@ FROM reviewers
         GROUP BY first_name, last_name;
 	
 --------------------------------using all tables/2joins------------------------------
+
+SELECT  title,
+    	rating,
+        CONCAT (first_name, " ", last_name) AS reviewer
+FROM reviewers
+        JOIN reviews
+        ON reviewers.id = reviews.reviewer_id
+        JOIN series
+        ON reviews.series_id = series.id;
