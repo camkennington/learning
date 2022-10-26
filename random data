@@ -328,3 +328,5 @@ SELECT genre,
     JOIN reviews
     ON series.id = reviews.series_id
     GROUP BY genre;
+    
+ -----------Looking for min/max/avg/countof reviews per reviewers and flagging inactive users---------
