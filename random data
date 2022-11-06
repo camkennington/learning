@@ -10,6 +10,8 @@ CREATE TABLE books
 		PRIMARY KEY(book_id)
 	);
 
+----------- Inserting values ----------------
+
 
 INSERT INTO books (title, author_fname, author_lname, released_year, stock_quantity, pages)
 VALUES
