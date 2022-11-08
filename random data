@@ -1,3 +1,5 @@
+-------- Basic Table --------- update
+
 CREATE TABLE books
 (
 		book_id INT NOT NULL AUTO_INCREMENT,
@@ -322,6 +324,7 @@ LEFT JOIN reviews
 ON series.id = reviews.series_id
    WHERE rating is NULL;
 
+***** NOTE - cannot use "=" to retusn NULL stuff
 
 --------Looking for avg rating per genre---------
 SELECT genre,
