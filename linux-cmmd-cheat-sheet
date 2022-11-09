@@ -38,3 +38,15 @@ yum install -y httpd
 systemctl start httpd
 systemctl enable httpd
 echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+service - Linux command to start and stop services
+ps - Display active processes
+kill and killall - Kill active processes by process ID or name
+df - Display disk filesystem information
+mount - Mount file systems in Linux
+chmod - Command to change file permissions
+
