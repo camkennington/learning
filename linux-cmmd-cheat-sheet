@@ -16,3 +16,9 @@ uname - Linux command to get basic information about the OS
 whoami - Get the active username
 tar - Command to extract and compress files in Linux
 grep - Search for a string within an output
+head - Return the specified number of lines from the top
+tail - Return the specified number of lines from the bottom
+diff - Find the difference between two files
+cmp - Allows you to check if two files are identical
+comm - Combines the functionality of diff and cmp
+sort - Linux command to sort the content of a file while outputting
