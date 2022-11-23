@@ -132,7 +132,8 @@ WHERE
     SELECT title, author_lname FROM books2
 WHERE author_lname IN ('Carver', 'Lahiri', 'Smith');
 
----------------------
+
+
 
 SELECT title, released_year,
 CASE
