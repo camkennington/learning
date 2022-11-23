@@ -1,0 +1,6 @@
+NGINX webserver that serves a simple page containing its hostname, IP address and port as wells as the request URI and the local time of the webserver.
+
+
+-------------to run Docker image--------------
+
+$ docker run -P -d nginxdemos/hello
