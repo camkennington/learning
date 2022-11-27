@@ -4,3 +4,12 @@ NGINX webserver that serves a simple page containing its hostname, IP address an
 -------------to run Docker image--------------
 
 $ docker run -P -d nginxdemos/hello
+
+
+--------------run as non-root user -------------
+
+/.dev
+/.idea
+/.vscode
+/*.iml
+Footer
