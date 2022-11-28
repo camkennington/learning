@@ -1,3 +1,5 @@
+------------Amazon S3 stores server access logs as objects in an S3 bucket. You can use Athena to quickly analyze and query server access logs----------------------
+
 CREATE EXTERNAL TABLE `s3_access_logs_db.mybucket_logs`(
   `bucketowner` STRING,
   `bucket_name` STRING,
