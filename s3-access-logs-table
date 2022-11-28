@@ -35,3 +35,18 @@ OUTPUTFORMAT
   'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat'
 LOCATION
   's3://awsexamplebucket1-logs/prefix/'
+  
+  
+  
+ ---------------------------------------------Example Queries---------------------------------------------------------------
+ 
+ 
+ 
+ 
+ -----------------------------------To find the request for a deleted object, use the following query----------------------------
+ 
+ SELECT * FROM s3_access_logs_db.mybucket_logs WHERE
+key = 'images/picture.jpg' AND operation like '%DELETE%';
+ 
+ 
+  
