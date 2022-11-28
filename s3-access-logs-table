@@ -47,6 +47,9 @@ LOCATION
  
  SELECT * FROM s3_access_logs_db.mybucket_logs WHERE
 key = 'images/picture.jpg' AND operation like '%DELETE%';
+
+
+----------------------------------To show Amazon S3 request IDs for requests that resulted in 403 Access Denied errors, use the following query--------------------------
  
  
   
