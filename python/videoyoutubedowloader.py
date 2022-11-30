@@ -2,8 +2,10 @@
 
 from pytube import YouTube 
 
+
 #location where you save.
 PATH = "E:/" #to_do 
+
 
 #link of video.
 link=["https://www.youtube.com/watch?v=p8FuTenSWPI", 
@@ -14,7 +16,8 @@ for i in link:
 		yt = YouTube(i) 
 	except: 
 		print("Connection Error") #to handle exception 
-	
+
+		
 	#check files with "mp4" extension 
 	mp4files = yt.filter('mp4') 
 
