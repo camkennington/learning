@@ -1,16 +1,20 @@
--------------pytube is a lightweight, Pythonic, dependency-free, library (and command-line utility) for downloading YouTube Videos--------------
+#-------------pytube is a lightweight, Pythonic, dependency-free, library (and command-line utility) for downloading YouTube Videos--------------
 
 from pytube import YouTube 
 
 
-#location where you save.
+#---------location where you save---------
+
 PATH = "E:/" #to_do 
 
 
-#link of video.
+#-----------link of video----------------
+
 link=["https://www.youtube.com/watch?v=p8FuTenSWPI", 
 	"https://www.youtube.com/watch?v=JWbnEt3xuos"
-	]#list of video links. 
+	]
+
+#-------------list of video links---------------- 
 for i in link: 
 	try: 
 		yt = YouTube(i) 
