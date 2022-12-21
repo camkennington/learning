@@ -33,3 +33,8 @@ cd /home/coder/project/marco-polo-cli-main
 #install software (reference Makefile)
 
 make install
+
+
+#run cli
+
+ ./cli.py --name Marco
