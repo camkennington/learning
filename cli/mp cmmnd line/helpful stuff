@@ -11,3 +11,7 @@ python3 -m pip install virtualenv
 #create a virtual envirnmnet (name is VENV)
 
  /home/coder/.local/bin/virtualenv VENV
+
+#source the virtualenv (activate it)
+
+source VENV/bin/activate
