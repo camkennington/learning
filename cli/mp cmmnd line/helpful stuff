@@ -1,0 +1,13 @@
+#Open a terminal (this one is visual studio)
+
+#cd into project directory
+
+cd /home/coder/project
+
+#install virtual environment
+
+python3 -m pip install virtualenv
+
+#create a virtual envirnmnet (name is VENV)
+
+ /home/coder/.local/bin/virtualenv VENV
