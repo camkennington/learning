@@ -1,0 +1,34 @@
+CREATE TABLE student (
+  id SERIAL,
+  name VARCHAR(128),
+  email VARCHAR(128) UNIQUE,
+  PRIMARY(id)
+  );
+  
+  CREATE TABLE course (
+    id SERIAL,
+    title VARCHAR(128) UNIQUE,
+    PRIMARY KEY(id)
+    );
+    
+   CREATE TABLE member (
+        sudent_id INTEGER REFERENCES student(id) ON DELETE CASCADE,
+        course_id INTEGER REFERENCES course(id) ON DELETE CASCADE,
+        role INTEGER,
+        PRIMARY KEY (student_id, course_id)
+        );
+        
+        
+        
+    INSERT INTO student (name, email) VALUES ('Jane', 'jane@tsugi.org');
+    INSERT INTO student (name, email) VALUES ('Ed', 'Ed@tsugi.org');
+     INSERT INTO student (name, email) VALUES ('Sue', 'Sue@tsugi.org');
+     
+     
+     INSERT INTO course (title) VALUES ('Python');
+     INSERT INTO course (title) VALUES ('SQL');
+     INSERT INTO course (title) VALUES ('PHP');
+     
+     
+        
+     
