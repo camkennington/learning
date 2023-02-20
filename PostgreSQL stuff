@@ -42,3 +42,22 @@ CREATE TABLE student (
      INSERT INTO member (student_id, course_id, role) VALUES (3,3,0);
      
      #role=1 for teacher, 0 for student
+
+
+SELECT student.name, member.role, course.title
+FROM student
+JOIN members ON member.student_id = student.id
+JOIN course ON member.course_id =course.id
+ORDER BY course.title, member.role DESC, student.name;
+
+#Output
+
+name|  role  | title
+-----------------------
+ed  |  1    |  PHP
+SUE |  0    |  PHP
+JANE|  1    | PYTHON
+ED  |  0    | PYTHON
+SUE |  0    | PYTHON
+ED  |  1    |  SQL
+JANE|  0    |  SQL
