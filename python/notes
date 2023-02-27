@@ -5,19 +5,16 @@ import sys
 print(sys.version)
 
 
-
 # Print the element on the 13th index in the string
   #Because indexing starts at 0, it means the first index is on the index 0.
 
 print(name[13])
 
 
-
 Stride
 
 # Get every second element in the range from index 0 to index 4
 name[0:5:2]
-
 
 Escape Sequence
 # New line escape sequence
@@ -32,7 +29,6 @@ print(" Michael Jackson \\ is the best" ) = Michael Jackson \ is the best
 
 # r will tell python that string will be display as raw string
 print(r" Michael Jackson \ is the best" )
-
 
 
 # Replace the old substring with the new target substring is the segment has been found in the string
@@ -100,7 +96,6 @@ del(A[0])
 'A,B,C,D'.split(',')      ====       ['A', 'B', 'C', 'D']
 
 
-
 # Create your first tuple
 tuple1 = ("disco",10,1.2 )
 
@@ -120,6 +115,21 @@ tuple2[0:3]
 
 # Slice from index 3 to index 4
 tuple2[3:5]
+
+# Get the length of tuple
+len(tuple2)
+
+
+# A sample tuple
+Ratings = (0, 9, 6, 5, 10, 8, 9, 6, 2)
+
+# Sort the tuple
+RatingsSorted = sorted(Ratings)     ===    [0, 2, 5, 6, 6, 8, 9, 9, 10] 
+
+
+
+
+
 
 
 
