@@ -36,7 +36,11 @@ print(r" Michael Jackson \ is the best" )
 
 
 # Replace the old substring with the new target substring is the segment has been found in the string
-
 a = "Michael Jackson is the best"
 b = a.replace('Michael', 'Janet')
 b
+
+
+# Find the substring in the string. Only the index of the first elment of substring in string will be the output
+name = "Michael Jackson"
+name.find('el')
