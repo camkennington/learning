@@ -101,3 +101,26 @@ del(A[0])
 
 
 
+# Create your first tuple
+tuple1 = ("disco",10,1.2 )
+
+# Print the type of the tuple you created
+type(tuple1)
+
+# Print the variable on each index
+print(tuple1[0])
+print(tuple1[1])
+print(tuple1[2])
+
+# Concatenate two tuples
+tuple2 = tuple1 + ("hard rock", 10)
+
+# Slice from index 0 to index 2
+tuple2[0:3]
+
+# Slice from index 3 to index 4
+tuple2[3:5]
+
+
+
+
