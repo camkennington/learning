@@ -49,3 +49,34 @@ print(r"\ ")
 
 #Convert the variable f to uppercase:
 print(f.upper())
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Create a list
+L = ["Cameron Kennington" , 29.3, 1992, "Feast"]
+
+
+# Print the elements on each index
+print('the same element using negative and positive indexing:\n Postive:',L[0],
+'\n Negative:' , L[-3]  )
+print('the same element using negative and positive indexing:\n Postive:',L[1],
+'\n Negative:' , L[-2]  )
+print('the same element using negative and positive indexing:\n Postive:',L[2],
+'\n Negative:' , L[-1]  )
+
+
+# Sample List
+L = ["Michael Jackson", 10.1,1982,"MJ",1]
+
+# List slicing
+L[3:5]  =    ['MJ', 1]
+
+
+#We can use the method extend to add new elements to the list:
+ # Use extend to add elements to list
+L = [ "Michael Jackson", 10.2]
+L.extend(['pop', 10])     ==      ['Michael Jackson', 10.2, 'pop', 10]
+
+
+
