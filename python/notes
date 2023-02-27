@@ -1,5 +1,18 @@
 # check python version
+  #sys is a built-in module that contains many system-specific parameters and functions, including the Python version in use. Before using it, we must explictly import it.
 
 import sys
 print(sys.version)
+
+
+
+# Print the element on the 13th index in the string
+  #Because indexing starts at 0, it means the first index is on the index 0.
+
+print(name[13])
+
+Stride
+
+# Get every second element in the range from index 0 to index 4
+name[0:5:2]
 
