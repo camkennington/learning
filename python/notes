@@ -44,3 +44,5 @@ b
 # Find the substring in the string. Only the index of the first elment of substring in string will be the output
 name = "Michael Jackson"
 name.find('el')
+
+print(r"\ ")
