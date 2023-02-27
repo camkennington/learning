@@ -134,7 +134,12 @@ NestedT =(1, 2, ("pop", "rock") ,(3,4),("disco",(1,2)))
 NestedT[2][1][0]
 
 
+# Find the first index of "disco":
+genres_tuple.index('disco')
 
+#Generate a sorted List from the Tuple C_tuple=(-5, 1, -3):
+C_tuple=(-5,1,-3)
+C_list=sorted(C_tuple)
 
 
 
