@@ -46,3 +46,6 @@ name = "Michael Jackson"
 name.find('el')
 
 print(r"\ ")
+
+#Convert the variable f to uppercase:
+print(f.upper())
