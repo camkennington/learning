@@ -11,8 +11,26 @@ print(sys.version)
 
 print(name[13])
 
+
+
 Stride
 
 # Get every second element in the range from index 0 to index 4
 name[0:5:2]
+
+
+Escape Sequence
+# New line escape sequence
+print(" Michael Jackson \n is the best" )
+
+# Tab escape sequence
+print(" Michael Jackson \t is the best" )
+
+# Include back slash in string
+print(" Michael Jackson \\ is the best" ) = Michael Jackson \ is the best
+
+
+# r will tell python that string will be display as raw string
+print(r" Michael Jackson \ is the best" )
+
 
