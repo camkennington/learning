@@ -176,5 +176,97 @@ del(release_year_dict['Graduation'])
 # Verify the key is in the dictionary
 'The Bodyguard' in release_year_dict
 
+------------------------------------------------------------Comparison Operators--------------------------------------------------------
+#Comparison operations compare some value or operand and based on a condition, produce a Boolean. When comparing two values you can use these operators:
 
+equal: ==
+not equal: !=
+greater than: >
+less than: <
+greater than or equal to: >=
+less than or equal to: <=
+
+
+# Greater than Sign
+i = 2
+i > 5:   True
+
+#The inequality test uses an exclamation mark preceding the equal sign, if two operands are not equal then the condition becomes True. For example, the following condition will produce True as long as the value of i is not equal to 6:
+
+# Inequality Sign
+i = 2
+i != 6 : True
+
+----------------------------------------------------------------------Branching-------------------------------------------------------------
+
+#Branching allows us to run different statements for different inputs.
+
+# Else statement example
+
+age = 22
+# age = 19
+
+if age > 18:
+    print("you can enter" )
+else:
+    print("go see Meat Loaf" )
+    
+print("move on")
+
+
+# Elif statment example
+age = 23
+
+if age > 18:
+    print("you can enter" )
+elif age == 18:
+    print("go see Pink Floyd")
+else:
+    print("go see Meat Loaf" )
+    
+print("move on")
+
+
+
+
+
+# Condition statement example
+album_year = 1964
+#album_year = 1970
+
+if album_year > 1980:
+    print("Album year is greater than 1980")
+else:
+    print("less than 1980")
+
+print('do something..')
+
+
+
+
+# Condition statement example
+album_year = 1980
+
+if(album_year > 1979) and (album_year < 1990):
+    print ("Album year was in between 1980 and 1989")
+    
+print("")
+print("Do Stuff..")
+
+
+
+# Condition statement example
+album_year = 1990
+
+if(album_year < 1980) or (album_year > 1989):
+    print ("Album was not made in the 1980's")
+else:
+    print("The Album was made in the 1980's ")
+
+#Write an if statement to determine if an album came out before 1980 or in the years: 1991 or 1993. If the condition is true print out the year the album came out.
+album_year=1994
+if (album_year < 1980) or (album_year == 1991) or (album_year == 1993):
+     print('this album came out in year' , album_year)                    
+else:
+    print('fuck you')
 
