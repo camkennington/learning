@@ -1,0 +1,33 @@
+READING TEXT FILES
+One way to read or write a file in Python is to use the built-in open function. The open function provides a File object that contains the methods and attributes you need in order to read, save, and manipulate the file. In this notebook, we will only cover .txt files. The first parameter you need is the file path and the file name.
+
+# Read the Example1.txt
+example1 = "example1.txt"
+file1 = open(example1, "r")
+
+# Print the path of file
+file1.name
+
+# Print the mode of file, either 'r' or 'w'
+file1.mode
+
+# Read the file
+FileContent = file1.read()
+FileContent
+
+# Print the file with '\n' as a new line
+print(FileContent)
+
+# Type of file content
+type(FileContent)
+
+# Close file after finish
+file1.close()
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OPENING FILE USING WITH STATEMENTS
+
+# Open file using with
+with open(example1, "r") as file1:
+    FileContent = file1.read()
+    print(FileContent)
