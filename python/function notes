@@ -13,7 +13,7 @@
   There is a body within every function that starts with a colon (:) and is indented.
   You can also place documentation before the body.
   The statement return exits a function, optionally passing back a value.
- --------------------------------------------------------------------------------------------------------------------------------------------------------------
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------
  # Define a function for multiple two numbers
 def Mult(a, b):
     c = a * b
@@ -26,11 +26,46 @@ print(result) : 24
 # Use mult() multiply two different type values together
 Mult(2, "Michael Jackson ") : 'Michael Jackson Michael Jackson '
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 Variables
 #The input to a function is called a formal parameter.
 #A variable that is declared inside a function is called a local variable. The parameter only exists within the function (i.e. the point where the function starts and stops).
 #A variable that is declared outside a function definition is a global variable, and its value is accessible and modifiable throughout the program
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+EXCEPTION HANDLING
+An exception is an error that occurs during the execution of code. This error causes the code to raise an exception and if not prepared to handle it will halt the execution of the code.
+
+Example Errors
+ZeroDivisionError - occurs when you try to divide by 0
+NameError - means that you tried to use the variable a when it was not defined.
+IndexError - you tried to access data from a list using an index that does not exist for this list
+https://docs.python.org/3/library/exceptions.html - list of all exceptions built into Python
+
+Try Except
+A try except will allow you to execute code that might raise an exception and in the case of any exception or a specific one we can handle or catch the exception and execute specific code. This will allow us to continue the execution of our program even if there is an exception.
+  Python tries to execute the code in the try block. In this case if there is any exception raised by the code in the try block, it will be caught and the code block in the except block will be executed. After that, the code that comes after the try except will be executed.
+  
+  # potential code before try catch
+try:
+    # code to try to execute
+except:
+    # code to execute if there is an exception
+# code that will still execute if there is an exception
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+a = 1
+try:
+    b = int(input("Please enter a number to divide a"))
+    a = a/b
+    print("Success a=",a)
+except:
+    print("There was an error")
+#An exception will only be raised if b is zero.
+
+
+
+
 
  
  
