@@ -35,3 +35,39 @@ class Circle(object):
         plt.gca().add_patch(plt.Circle((0, 0), radius=self.radius, fc=self.color))
         plt.axis('scaled')
         plt.show()
+        
+  ----------------------------------------------------------------------------------------------------------------------------------------      
+CREATING AN INSTANCE OF A CLASS CIRCLE
+
+# Create an object RedCircle
+RedCircle = Circle(10, 'red')
+
+# Find out the methods can be used on the object RedCircle
+dir(RedCircle)
+
+# Print the object attribute radius
+RedCircle.radius
+
+# Print the object attribute color
+RedCircle.color
+
+# Set the object attribute radius
+RedCircle.radius = 1
+RedCircle.radius
+
+# Call the method drawCircle
+RedCircle.drawCircle()
+
+# Use method to change the object attribute radius
+print('Radius of object:',RedCircle.radius)
+RedCircle.add_radius(10)
+print('Radius of object of after applying the method add_radius(2):',RedCircle.radius)
+RedCircle.add_radius(10)
+print('Radius of object of after applying the method add_radius(5):',RedCircle.radius)
+
+
+# Create a blue circle with a given radius
+BlueCircle = Circle(radius=100)
+
+
+
