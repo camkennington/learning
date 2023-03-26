@@ -69,5 +69,83 @@ print('Radius of object of after applying the method add_radius(5):',RedCircle.r
 # Create a blue circle with a given radius
 BlueCircle = Circle(radius=100)
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATING AN INSTANCE OF A RECTANGLE CLASS
+
+# Create a new Rectangle class for creating a rectangle object
+class Rectangle(object):
+    
+    # Constructor
+    def __init__(self, width=2, height=3, color='r'):
+        self.height = height 
+        self.width = width
+        self.color = color
+    
+    # Method
+    def drawRectangle(self):
+        plt.gca().add_patch(plt.Rectangle((0, 0), self.width, self.height ,fc=self.color))
+        plt.axis('scaled')
+        plt.show()
+        
+# Create a new object rectangle
+SkinnyBlueRectangle = Rectangle(2, 3, 'blue')
+
+# Print the object attribute height
+SkinnyBlueRectangle.height 
+
+# Print the object attribute width
+SkinnyBlueRectangle.width
+
+# Create a new object rectangle
+FatYellowRectangle = Rectangle(20, 5, 'yellow')
+
+# Use the drawRectangle method to draw the shape
+FatYellowRectangle.drawRectangle()
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+EXAMPLE
+Text Analysis 
+You have been recruited by your friend, a linguistics enthusiast, to create a utility tool that can perform analysis on a given piece of text. Complete the class 'analysedText' with the following methods -
+
+Constructor (__init__) - This method should take the argument text, make it lower case, and remove all punctuation. Assume only the following punctuation is used: period (.), exclamation mark (!), comma (,) and question mark (?). Assign this newly formatted text to a new attribute called fmtText.
+freqAll - This method should create and return dictionary of all unique words in the text, along with the number of times they occur in the text. Each key in the dictionary should be the unique word appearing in the text and the associated value should be the number of times it occurs in the text. Create this dictionary from the fmtText attribute.
+freqOf - This method should take a word as an argument and return the number of occurrences of that word in fmtText.
+
+class analysedText(object):
+    
+    def __init__ (self, text):
+        # remove punctuation
+        formattedText = text.replace('.','').replace('!','').replace('?','').replace(',','')
+        
+        # make text lowercase
+        formattedText = formattedText.lower()
+        
+        self.fmtText = formattedText
+        
+    def freqAll(self):        
+        # split text into words
+        wordList = self.fmtText.split(' ')
+        
+        # Create dictionary
+        freqMap = {}
+        for word in set(wordList): # use set to remove duplicates in list
+            freqMap[word] = wordList.count(word)
+        
+        return freqMap
+    
+    def freqOf(self,word):
+        # get frequency map
+        freqDict = self.freqAll()
+        
+        if word in freqDict:
+            return freqDict[word]
+        else:
+            return 0
+    
+
+
+
+
+
 
 
