@@ -60,5 +60,34 @@ df1
 Retrieve the Marks column and assign it to a varibale b:
 b =df1 [['Marks']]
 
+Retrieve Country and Course columns and assign it to a variable c:
+c = df1[['Country','Course']]
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+To view the column as a series, just use 1 bracket
+# Get the Student column as a series Object
+x = df1['Student']
+x
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+LOC() AND ILOC() FUNCTIONS:
+
+loc() is a label-based data selecting method which means that we have to pass the name of the row or column that we want to select. 
+This method includes the last element of the range passed in it.
+	- Syntax = loc[row_label, column_label]
+
+iloc() is an indexed-based selecting method which means that we have to pass integer index in the method to select a specific row/column.
+This method does not include the last element of the range passed in it.
+	- Syntax = iloc[row_index, column_index]
+
+
+
+# Access the value on the first row and the first column:
+df.iloc[0, 0]
+
+# Access the value on the first row and the third column:
+df.iloc[0,2]
+
+# Access the column using the name
+df.loc[0, 'Salary']
 
 
