@@ -1,0 +1,64 @@
+#Pandas is a popular library for data analysis built on top of the Python programming language. Pandas generally provide two data structures for manipulating data, They are:
+ - DataFrame
+ - Series
+ 
+ DataFrame - 2 dimensional data structure, data is aligned in a tabbular fashion in rows and columns
+    - Pandas DataFrame will be created by loading the datasets from existing storage
+    - Storage can be SQL Database, CSV File, Excel File, etc. 
+ Series represents a one-dimensional array of indexed data. Two main components:
+    - an array of actual data
+    -an associated array of indexes or data labels
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#import Pandas library
+import pandas as pd
+
+Creating a Dataframe out of a Dictionary
+
+#Define a dictionary 'x'
+x = {'Name': ['Rose','John', 'Jane', 'Mary'], 'ID': [1, 2, 3, 4], 'Department': ['Architect Group', 'Software Group', 'Design Team', 'Infrastructure'], 
+      'Salary':[100000, 80000, 50000, 60000]}
+
+#casting the dictionary to a DataFrame
+df = pd.DataFrame(x)
+
+#display the result df
+df
+
+Result
+	Name	ID	Department	  Salary
+0	Rose	1	Architect Group	100000
+1	John	2	Software Group	80000
+2	Jane	3	Design Team	     50000
+3	Mary	4	Infrastructure	60000
+
+Column Selection:
+#Retrieving the "ID" column and assigning it to a variable x
+x = df[['ID']]
+x
+
+Using the Type Function to Check the Type of Variable:
+#check the type of x
+type(x) = pandas.core.frame.DataFrame
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Create a DataFrame to display the table with students, age, country, course and marks:
+	Student	Age	Country	Course	          Marks
+0	David	  27	UK	    Python	           85
+1	Samuel	24	Canada	Data Structures	   72
+2	Terry	  22	China	  Machine Learning	 89
+3	Evan	  32	USA	    Web Development	   76
+
+
+a = {'Student':['David', 'Samuel', 'Terry', 'Evan'],
+     'Age':['27', '24', '22', '32'],
+     'Country':['UK', 'Canada', 'China', 'USA'],
+     'Course':['Python','Data Structures','Machine Learning','Web Development'],
+     'Marks':['85','72','89','76']}
+df1 = pd.DataFrame(a)
+df1
+
+Retrieve the Marks column and assign it to a varibale b:
+b =df1 [['Marks']]
+
+
+
