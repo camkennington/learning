@@ -90,4 +90,7 @@ df.iloc[0,2]
 # Access the column using the name
 df.loc[0, 'Salary']
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+#how would you perform the dot product between the numpy arrays u and v?
+np.dot(u,v)
