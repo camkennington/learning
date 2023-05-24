@@ -140,8 +140,53 @@ d = c[1:4]
 # Set the fourth element and fifth element to 300 and 400
 c[3:5] = 300, 400
 
+# Print the even elements in the given array
 arr = np.array([1, 2, 3, 4, 5, 6, 7])
 print(arr[1:5:2])
 
-#Print the even elements in the given array.
-print(arr[1:8:2])
+
+ASSIGNING VALUES WITH LIST:
+
+#Create the index list
+select = [0, 2, 3, 4]
+
+#Use List to select elements
+d = c[select]
+
+#Assign the specified elements to new value
+c[select] = 100000
+
+#Create a numpy array
+a = np.array([0, 1, 2, 3, 4])
+
+#Get the size of numpy array
+a.size
+
+#Get the number of dimensions of numpy array
+a.ndim
+
+#Get the shape/size of numpy array
+a.shape
+
+
+NUMPY STATISTICAL FUNCTIONS:
+
+# Create a numpy array
+a = np.array([1, -1, 1, -1])
+
+# Get the mean of numpy array
+mean = a.mean()
+
+# Get the standard deviation of numpy array
+standard_deviation=a.std()
+
+# Get the biggest value in the numpy array
+max_b = b.max()
+
+
+
+
+
+
+
+
