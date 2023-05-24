@@ -127,4 +127,12 @@ type(a)
 #Assign the first element to 100
 c[0] = 100
 
+# Assign the 5th element to 0
+c[4] = 0
 
+SLICING:
+#Like lists, we can slice the numpy array. Slicing in python means taking the elements from the given index to another given index.
+
+#We can select the elements from 1 to 3 and assign it to a new numpy array d as follows:
+# Slicing the numpy array
+d = c[1:4]
