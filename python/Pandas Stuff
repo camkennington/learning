@@ -183,6 +183,26 @@ standard_deviation=a.std()
 # Get the biggest value in the numpy array
 max_b = b.max()
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2D NUMPY
+
+#import libraries
+import numpy as np 
+import matplotlib.pyplot as plt
+
+#create a list
+a = [[11, 12, 13], [21, 22, 23], [31, 32, 33]]
+
+# Convert list to Numpy Array
+# Every element is the same type
+A = np.array(a)
+
+#show the numpy array dimesnions
+
+
+
+
+
 
 
 
