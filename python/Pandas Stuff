@@ -261,7 +261,39 @@ Z = X * Y  =  ([[2, 0],[0, 2]])
 
 MATRIX MULTIPLICATION
 
+# Create a matrix A
+A = np.array([[0, 1, 1], [1, 0, 1]])
+=array([[0, 1, 1],
+       [1, 0, 1]])
+       
+# Create a matrix B
+B = np.array([[1, 1], [1, 1], [-1, 1]])       
+= array([[ 1,  1],
+       [ 1,  1],
+       [-1,  1]])
+       
+# Calculate the dot product
+Z = np.dot(A,B)   
+= array([[0, 2],
+       [0, 2]])
 
 
+# Calculate the sine of Z
+np.sin(Z)
+= array([[0.        , 0.90929743],
+       [0.        , 0.90929743]])
+
+# Create a matrix C
+C = np.array([[1,1],[2,2],[3,3]])
+=array([[1, 1],
+       [2, 2],
+       [3, 3]])
+  
+  
+# Get the transposed of C
+C.T       
+= array([[1, 2, 3],
+       [1, 2, 3]])
+       
 
 
