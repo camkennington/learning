@@ -8,7 +8,7 @@
  Series represents a one-dimensional array of indexed data. Two main components:
     - an array of actual data
     -an associated array of indexes or data labels
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #import Pandas library
 import pandas as pd
 
@@ -62,7 +62,7 @@ b =df1 [['Marks']]
 
 Retrieve Country and Course columns and assign it to a variable c:
 c = df1[['Country','Course']]
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 To view the column as a series, just use 1 bracket
 # Get the Student column as a series Object
 x = df1['Student']
@@ -95,7 +95,7 @@ df.loc[0, 'Salary']
 #how would you perform the dot product between the numpy arrays u and v?
 np.dot(u,v)
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Create a python list as follows:
 a = ["0", 1, "two", "3", 4]
 
@@ -106,7 +106,7 @@ print("a[2]:", a[2])
 print("a[3]:", a[3])
 print("a[4]:", a[4])
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #NumPy is a Python library used for working with arrays, linear algebra, fourier transform, and matrices.
 #A numpy array is similar to a list. NumPy stands for Numerical Python and it is an open source project.
@@ -183,7 +183,7 @@ standard_deviation=a.std()
 # Get the biggest value in the numpy array
 max_b = b.max()
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2D NUMPY
 
 #import libraries
@@ -202,15 +202,34 @@ A.ndim
 
 #show the numpy array size
 A.size
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ACCESSING DIFFERENT ELEMENTS OF A NUMPY ARRAY
 
+#We can use rectangular brackets to access the different elements of the array. The correspondence between the rectangular brackets and the list and the rectangular representation is shown below:
 
+_________________________
+| A[0,0]  A[0,1]   A[0,2]
+| A[1,0]  A[1,1]   A[1,2]
+| A[2,0]  A[2,1]   A[2,2]
+|________________________
+ 
+# Access the element on the second row and third column
+A[1, 2]
 
+# Access the element on the second row and third column
+A[1][2]
 
+# Access the element on the first row and first column
+A[0][0]
 
+# Access the element on the first row and first and second columns
+A[0][0:2]
 
+# Access the element on the first and second rows and third column
+A[0:2, 2]
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BASIC OPERATIONS
 
-
-
-
+We can also add arrays. Process is identical to matrix addition
 
