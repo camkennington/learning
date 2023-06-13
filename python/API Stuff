@@ -69,4 +69,51 @@ dict_nba_team=one_dict(nba_teams)
 df_teams=pd.DataFrame(dict_nba_team)
 df_teams.head()
 
+#Will use the team's nickname to find the unique id, we can see the row that contains the warriors by using the column nickname as follows:
+df_warriors=df_teams[df_teams['nickname']=='Warriors']
+df_warriors
+
+#we can use the following line of code to access the first column of the dataframe:
+id_warriors=df_warriors[['id']].values[0][0]
+# we now have an integer that can be used to request the Warriors information 
+id_warriors
+
+#The function "League Game Finder " will make an API call, it's in the module stats.endpoints
+from nba_api.stats.endpoints import leaguegamefinder
+
+#The parameter team_id_nullable is the unique ID for the warriors. Under the hood, the NBA API is making a HTTP request.
+#The information requested is provided and is transmitted via an HTTP response this is assigned to the object game finder.
+
+#you can download the dataframe from the API call for Golden State and run the rest like a video.
+import requests
+
+filename = "https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/PY0101EN/Chapter%205/Labs/Golden_State.pkl"
+
+def download(url, filename):
+    response = requests.get(url)
+    if response.status_code == 200:
+        with open(filename, "wb") as f:
+            f.write(response.content)
+
+download(filename, "Golden_State.pkl")
+
+file_name = "Golden_State.pkl"
+games = pd.read_pickle(file_name)
+games.head()
+
+#We can create two dataframes, one for the games that the Warriors faced the raptors at home, and the second for away games.
+games_home=games [games ['MATCHUP']=='GSW vs. TOR']
+games_away=games [games ['MATCHUP']=='GSW @ TOR']
+
+#Calculate the mean for the column PTS for the dataframes games_home and  games_away:
+games_home.mean()['PTS']
+games_away.mean()['PTS']
+
+
+
+
+
+
+
+
 
