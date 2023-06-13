@@ -21,3 +21,19 @@ type(df)
 
 #When you call the method head the dataframe communicates with the API displaying the first few rows of the dataframe.
 df.head()
+
+#When you call the method mean, the API will calculate the mean and return the value.
+df.mean()
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+REST APIs
+
+#Rest API's function by sending a request, the request is communicated via HTTP message. The HTTP message usually contains a JSON file. This contains instructions for what operation we would like the service or resource to perform. In a similar manner, API returns a response, via an HTTP message, this response is usually contained within a JSON.
+
+#install NBA API
+!pip install nba_api
+
+from nba_api.stats.static import teams
+import matplotlib.pyplot as plt
+
+The method get_teams() returns a list of dictionaries.
