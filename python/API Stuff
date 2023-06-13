@@ -36,4 +36,37 @@ REST APIs
 from nba_api.stats.static import teams
 import matplotlib.pyplot as plt
 
-The method get_teams() returns a list of dictionaries.
+#The method get_teams() returns a list of dictionaries.
+nba_teams = teams.get_teams()
+
+#The dictionary key id has a unique identifier for each team as a value. Let's look at the first three elements of the list:
+nba_teams[0:3]
+=
+[{'id': 1610612737,
+  'full_name': 'Atlanta Hawks',
+  'abbreviation': 'ATL',
+  'nickname': 'Hawks',
+  'city': 'Atlanta',
+  'state': 'Atlanta',
+  'year_founded': 1949},
+ {'id': 1610612738,
+  'full_name': 'Boston Celtics',
+  'abbreviation': 'BOS',
+  'nickname': 'Celtics',
+  'city': 'Boston',
+  'state': 'Massachusetts',
+  'year_founded': 1946},
+ {'id': 1610612739,
+  'full_name': 'Cleveland Cavaliers',
+  'abbreviation': 'CLE',
+  'nickname': 'Cavaliers',
+  'city': 'Cleveland',
+  'state': 'Ohio',
+  'year_founded': 1970}]
+  
+# convert dictionary to table
+dict_nba_team=one_dict(nba_teams)
+df_teams=pd.DataFrame(dict_nba_team)
+df_teams.head()
+
+
