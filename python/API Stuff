@@ -109,6 +109,20 @@ games_away=games [games ['MATCHUP']=='GSW @ TOR']
 games_home.mean()['PTS']
 games_away.mean()['PTS']
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HTTP AND REQUESTS
+
+#Requests is a Python Library that allows you to send <code>HTTP/1.1</code> requests easily. We can import the library as follows:
+import requests
+
+#Also import the below libraries:
+import os 
+from PIL import Image
+from IPython.display import IFrame
+
+#You can make a GET request via the method get to www.ibm.com:
+url='https://www.ibm.com/'
+r=requests.get(url)
 
 
 
